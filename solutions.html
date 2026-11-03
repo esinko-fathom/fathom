@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solutions | fathom Engineering</title>
+  <meta name="description" content="fathom's automation solutions are designed to integrate seamlessly into your existing floor, clear your most expensive bottlenecks, and immediately protect your margins." />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=212" />
+</head>
+<body style="background: var(--dark-bg);">
+
+
+<script src="navbar.js?v=212"></script>
+
+<section id="statement-reveal-section">
+  <div class="statement-sticky-container">
+    <h2 class="statement-text">Building hardware<br>doesn't have to be a <span class="nightmare-word">nightmare.</span></h2>
+  </div>
+</section>
+
+<!-- SOLUTIONS SECTION (2 of 6 with navigation arrows) -->
+<section id="solutions-carousel-section" class="solutions-carousel-section">
+  <div class="solutions-carousel-container">
+    <div class="solutions-carousel-header">
+      <div>
+        <div class="solutions-section-subtitle">Our Solutions</div>
+        <h2 class="solutions-section-title">Engineered Automation Solutions</h2>
+      </div>
+    </div>
+
+    <!-- Side Navigation Arrows -->
+    <button class="sol-side-arrow sol-arrow-prev" id="sol-side-prev" aria-label="Previous Solution">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="sol-side-arrow sol-arrow-next" id="sol-side-next" aria-label="Next Solution">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+
+    <div class="solutions-track-wrap" id="sol-track-wrap">
+      <div class="solutions-track">
+        
+        <!-- Solution 1 -->
+        <div class="sol-slide-card">
+          <div class="sol-card-media">
+            <img src="./Images/solution-1.webp" alt="CNC Machine Tending" />
+            <span class="sol-card-badge">Solution 01</span>
+          </div>
+          <div class="sol-card-body">
+            <h3 class="sol-card-title">CNC Machine Tending</h3>
+            <div class="sol-card-tagline">&ldquo;Maximize uptime & keep chips flying&rdquo;</div>
+            <p class="sol-card-desc">CNC equipment is one of the most costly capital assets, when sitting idle, in the entire industry. Waiting for an operator to load parts for repetitive production is very costly and not competitive. We deploy robotic work cells that automate the loading, unloading, staging and even inspection of components.</p>
+            <ul class="sol-card-bullets">
+              <li>Dramatically Higher Machine Utilization & Throughput.</li>
+              <li>Cuts Labor Dependency.</li>
+              <li>Consistency, Quality & Lower Scrap.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Solution 2 -->
+        <div class="sol-slide-card sol-card-sol2">
+          <div class="sol-card-media">
+            <img src="./Images/solution-2.webp" alt="Measurement & Inspection Automation" class="sol-media-sol2" />
+            <span class="sol-card-badge">Solution 02</span>
+          </div>
+          <div class="sol-card-body">
+            <h3 class="sol-card-title">Measurement & Inspection Automation</h3>
+            <div class="sol-card-tagline">&ldquo;Maximize product out the door with sacrificing quality&rdquo;</div>
+            <p class="sol-card-desc">Quality control is one of the most expensive process steps because it adds no physical value to the product—yet it is essential. Manual measurement and inspection consume skilled labor hours, slow production flow, and introduce human variability that lead to errors. Automating QC eliminates the non-value-added labor cost, accelerate cycle times, and dramatically increase the volume of good product that ships.</p>
+            <ul class="sol-card-bullets">
+              <li>Higher Throughput & More Product Shipped.</li>
+              <li>Superior Consistency & Quality</li>
+              <li>Dramatically Lower Cost</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Solution 3 -->
+        <div class="sol-slide-card sol-card-sol3">
+          <div class="sol-card-media">
+            <img src="./Images/solution-inline-inspections.webp" alt="Inline Inspections" class="sol-media-sol3" />
+            <span class="sol-card-badge">Solution 03</span>
+          </div>
+          <div class="sol-card-body">
+            <h3 class="sol-card-title">Inline Inspections</h3>
+            <div class="sol-card-tagline">&ldquo;Check parts immediately after value added process&rdquo;</div>
+            <p class="sol-card-desc">By measuring and verifying parts in-line (on the machine, in the cell, or between stations), manufacturers catch defects immediately, reduce scrap and rework, free operators from repetitive checks, and increase the number of good parts shipped. The result is lower cost per part, higher throughput, and more consistent quality without adding a separate inspection bottleneck.</p>
+            <ul class="sol-card-bullets">
+              <li>Catch defects immediately so bad parts never move downstream or reach the customer.</li>
+              <li>Cut the labor and equipment cost of a separate inspection step that adds no value to the part.</li>
+              <li>Increase good parts shipped by reducing scrap, rework, and process delays.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Solution 4 -->
+        <div class="sol-slide-card">
+          <div class="sol-card-media">
+            <img src="./Images/solution-3.webp" alt="Process Value-adds Through Robotics" />
+            <span class="sol-card-badge">Solution 04</span>
+          </div>
+          <div class="sol-card-body">
+            <h3 class="sol-card-title">Process Value-adds Through Robotics</h3>
+            <div class="sol-card-tagline">&ldquo;Consistent high-value robotic operations&rdquo;</div>
+            <p class="sol-card-desc">We design and deliver robotic solutions that transform critical process steps—buffing, part marking, assembly, and welding—into consistent, high-value operations for manufacturers. Our robotic systems eliminate the inconsistencies of manual work, deliver precise and repeatable results cycle after cycle, and free skilled operators to focus on higher-value activities.</p>
+            <ul class="sol-card-bullets">
+              <li>Consistent, high-quality results.</li>
+              <li>Higher throughput without adding headcount.</li>
+              <li>Scalable.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Solution 5 -->
+        <div class="sol-slide-card">
+          <div class="sol-card-media">
+            <img src="./Images/solution-4.webp" alt="Assembly Automation Machines" />
+            <span class="sol-card-badge">Solution 05</span>
+          </div>
+          <div class="sol-card-body">
+            <h3 class="sol-card-title">Assembly Automation Machines</h3>
+            <div class="sol-card-tagline">&ldquo;Produce more parts, better quality, and lower labor costs&rdquo;</div>
+            <p class="sol-card-desc">Manual assembly is limited by human speed, fatigue, and inconsistency. Its just not competitive in today's market. Automated assembly systems eliminate these constraints—performing precise, repeatable operations at high speed, shift after shift, with minimal supervision. Assembly automation is not just a cost-saving tool—it is a direct path to greater capacity, better product quality, and stronger profitability.</p>
+            <ul class="sol-card-bullets">
+              <li>Higher Throughput & Capacity</li>
+              <li>Superior Consistency & Quality</li>
+              <li>Lower Labor Cost & Reduced Dependency</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Solution 6 -->
+        <div class="sol-slide-card">
+          <div class="sol-card-media">
+            <img src="./Images/solution-5.webp" alt="General Manufacturing Solutions" />
+            <span class="sol-card-badge">Solution 06</span>
+          </div>
+          <div class="sol-card-body">
+            <h3 class="sol-card-title">General Manufacturing Solutions</h3>
+            <div class="sol-card-tagline">&ldquo;Move from concept to reality on manufacturing problems at any scale.&rdquo;</div>
+            <p class="sol-card-desc">Beyond core automation, Fathom supports manufacturers with a full range of practical manufacturing solutions, including product development, prototyping, 3D printing, laser cutting, and CNC machining. These capabilities allow us to move quickly from concept to reality, helping customers validate designs, reduce development time, and bring products to production faster.</p>
+            <ul class="sol-card-bullets">
+              <li>Product Development & Prototyping.</li>
+              <li>3D Printing & Laser Cutting.</li>
+              <li>CNC Machining & Software development.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     OTHER THINGS WE CAN DO (Capabilities Section)
+     ═══════════════════════════════════════ -->
+<section id="additional-capabilities-section" class="additional-capabilities-section">
+  <div class="add-cap-container">
+    <div class="add-cap-header">
+      <div class="solutions-section-subtitle">Custom Engineering & Build</div>
+      <h2 class="add-cap-title">Other Things We Can Do</h2>
+      <p class="add-cap-sub">Beyond our standard solutions, fathom engineers custom automation and manufacturing systems for any production challenge. If you can spec it, we can design, build, and deploy it.</p>
+    </div>
+
+    <div class="add-cap-grid">
+      <!-- Card 1 -->
+      <div class="add-cap-card">
+        <div class="add-cap-card-glow"></div>
+        <div class="add-cap-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3 class="add-cap-card-title">Measurement & Inspection Solutions</h3>
+        <ul class="add-cap-list">
+          <li><span>•</span> 1, 2 & 3D Machine Vision & Laser Specialists</li>
+          <li><span>•</span> Measurement & Inspection Systems for Production</li>
+          <li><span>•</span> Full Turn-Key Solutions</li>
+          <li><span>•</span> Semi-Automated Process Checks</li>
+          <li><span>•</span> Offline Inspection Automation</li>
+          <li><span>•</span> Lab & Benchtop Inspection Devices</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="add-cap-card">
+        <div class="add-cap-card-glow"></div>
+        <div class="add-cap-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16.5" r="1.5"/></svg>
+        </div>
+        <h3 class="add-cap-card-title">Process Automations</h3>
+        <ul class="add-cap-list">
+          <li><span>•</span> Pick & Place Robotics</li>
+          <li><span>•</span> High-Speed Machine Tending</li>
+          <li><span>•</span> Component Assembly Cells</li>
+          <li><span>•</span> Dispensing & Precision Coating Solutions</li>
+          <li><span>•</span> Repetitive & Ergonomic Task Solutions</li>
+          <li><span>•</span> In-Line Part Transfer & Indexing</li>
+        </ul>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="add-cap-card">
+        <div class="add-cap-card-glow"></div>
+        <div class="add-cap-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <h3 class="add-cap-card-title">Tooling & Prototyping</h3>
+        <ul class="add-cap-list">
+          <li><span>•</span> Industrial Laser Cutting</li>
+          <li><span>•</span> High-Precision CNC Machining (Turning & Milling)</li>
+          <li><span>•</span> Production-Grade 3D Printing</li>
+          <li><span>•</span> Rapid Prototype Design & Iteration</li>
+          <li><span>•</span> Production Development & Fixturing</li>
+          <li><span>•</span> Custom End-of-Arm Tooling (EOAT)</li>
+        </ul>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="add-cap-card">
+        <div class="add-cap-card-glow"></div>
+        <div class="add-cap-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h3 class="add-cap-card-title">Design & Product Development</h3>
+        <ul class="add-cap-list">
+          <li><span>•</span> End-to-End Product Development</li>
+          <li><span>•</span> 3D CAD Design & Digital Modeling</li>
+          <li><span>•</span> 2D Engineering Prints & Documentation</li>
+          <li><span>•</span> Design for Manufacturability (DFM) Review</li>
+          <li><span>•</span> Systems Architecture & Automation Consultation</li>
+          <li><span>•</span> Custom Software, PLC & Controls Integration</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom CTA Bar -->
+    <div class="add-cap-cta-bar">
+      <div class="add-cap-cta-text">
+        <h4 style="font-size: 22px; font-weight: 500; color: #fff; margin-bottom: 6px;">Have a project in mind?</h4>
+        <p style="color: var(--muted); font-size: 15px; margin: 0;">Our engineering team specializes in solving one-off bottlenecks and any manufacturing problem you will face.</p>
+      </div>
+      <a href="index.html#contact" class="nav-contact-btn" style="padding: 14px 32px; font-size: 14px; text-decoration: none; white-space: nowrap;">TALK TO AN ENGINEER</a>
+    </div>
+  </div>
+</section>
+
+<!-- Buffer section to allow scrolling past the last card -->
+<div style="background: var(--dark-bg); position: relative; z-index: 10;">
+  <fathom-footer></fathom-footer>
+</div>
+
+<script src="footer.js?v=212"></script>
+<script src="main.js?v=212"></script>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-inner">
+    <a href="solutions.html" class="mobile-nav-link" onclick="toggleMobileNav()">Solutions</a>
+    <a href="products.html" class="mobile-nav-link" onclick="toggleMobileNav()">Standardized Products</a>
+    <a href="return.html" class="mobile-nav-link" onclick="toggleMobileNav()">Calculate Project Return</a>
+    <a href="testimonials.html" class="mobile-nav-link" onclick="toggleMobileNav()">Testimonials</a>
+    <a href="index.html#contact" class="mobile-nav-link" onclick="toggleMobileNav()">Contact</a>
+    <a href="index.html#contact" class="nav-btn ask-fathom" style="display: inline-flex !important; margin-top: 24px;" onclick="toggleMobileNav()">ASK FATHOM</a>
+  </div>
+</div>
+
+</body>
+</html>

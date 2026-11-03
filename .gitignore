@@ -1,0 +1,35 @@
+*.mov
+*.mp4
+*.zip
+.DS_Store
+
+# Legacy / Archive / Client Revisions
+v1/
+v2/
+backups/
+Revision/
+node_modules/
+package.json
+package-lock.json
+*.docx
+*.docx.pdf
+
+# Scratch & migration scripts
+convert_assets.sh
+create_testimonials.js
+debug_*.js
+fix_*.js
+fix_images.sh
+lowercase_fathom.js
+modify_*.js
+move_nightmare.js
+refactor_footers.js
+replace_assets.js
+screenshot_test.js
+test*.js
+test.html
+update_*.js
+circuit-board.*
+hero-metal.*
+laser-optics.*
+precision-assembly.*

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | fathom</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=212" />
+  <style>
+    .page-hero {
+      position: relative; width: 100%; height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--dark-bg);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<script src="navbar.js?v=212"></script>
+
+<section class="page-hero" style="height: auto; padding: 160px 0 80px; text-align: left; background: var(--dark-bg);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--pad);">
+    <h1 class="hero-text-reveal" style="font-size: clamp(48px, 6vw, 80px); margin-bottom: 24px;">Our Services</h1>
+    <p class="hero-subheading" style="max-width: 600px; margin-bottom: 80px;">We audit your exact production bottleneck and build the simplest, most elegant solution to solve it.</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+      <!-- Measurement & Inspection Solutions -->
+      <div style="background: rgba(255,255,255,0.02); padding: 40px; border: 1px solid rgba(255,255,255,0.05); border-radius: 12px;">
+        <h3 style="font-size: 24px; font-weight: 500; color: #fff; margin-bottom: 24px;">Measurement & Inspection Solutions</h3>
+        <ul style="list-style: none; padding: 0; color: var(--muted); font-size: 16px; line-height: 1.8;">
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> 1, 2 & 3D Machine Vision & Laser Specialists</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Measurement & inspection Systems for production</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Full turn-key solutions</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Semi-Automated Process Checks</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Offline Inspection Automation</li>
+          <li style="display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Lab Devices</li>
+        </ul>
+      </div>
+
+      <!-- Process Automations -->
+      <div style="background: rgba(255,255,255,0.02); padding: 40px; border: 1px solid rgba(255,255,255,0.05); border-radius: 12px;">
+        <h3 style="font-size: 24px; font-weight: 500; color: #fff; margin-bottom: 24px;">Process Automations</h3>
+        <ul style="list-style: none; padding: 0; color: var(--muted); font-size: 16px; line-height: 1.8;">
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Pick & Place Robotics</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Machine tending</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Component Assembly</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Dispensing & coating solutions</li>
+          <li style="display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Repetitive Task Solutions</li>
+        </ul>
+      </div>
+
+      <!-- Tooling & Prototyping -->
+      <div style="background: rgba(255,255,255,0.02); padding: 40px; border: 1px solid rgba(255,255,255,0.05); border-radius: 12px;">
+        <h3 style="font-size: 24px; font-weight: 500; color: #fff; margin-bottom: 24px;">Tooling & Prototyping</h3>
+        <ul style="list-style: none; padding: 0; color: var(--muted); font-size: 16px; line-height: 1.8;">
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Laser Cutting</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> CNC Machining (Turning & Milling)</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> 3D Printing</li>
+          <li style="display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Prototype Design & Production Development</li>
+        </ul>
+      </div>
+
+      <!-- Design & Product Development -->
+      <div style="background: rgba(255,255,255,0.02); padding: 40px; border: 1px solid rgba(255,255,255,0.05); border-radius: 12px;">
+        <h3 style="font-size: 24px; font-weight: 500; color: #fff; margin-bottom: 24px;">Design & Product Development</h3>
+        <ul style="list-style: none; padding: 0; color: var(--muted); font-size: 16px; line-height: 1.8;">
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Product Development</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> CAD Design</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> 2D Prints & Documentations</li>
+          <li style="display: flex; gap: 12px;"><span style="color: var(--royal-blue);">•</span> Review & Consultation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="background: var(--dark-bg); position: relative; z-index: 10;">
+  <fathom-footer></fathom-footer>
+</div>
+
+<script src="footer.js?v=212"></script>
+<script src="main.js?v=212"></script>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-inner">
+    <a href="solutions.html" class="mobile-nav-link" onclick="toggleMobileNav()">Solutions</a>
+    <a href="products.html" class="mobile-nav-link" onclick="toggleMobileNav()">Standardized Products</a>
+    <a href="index.html#case-studies-section" class="mobile-nav-link" onclick="toggleMobileNav()">Case Studies</a>
+    <a href="testimonials.html" class="mobile-nav-link" onclick="toggleMobileNav()">Testimonials</a>
+    <a href="index.html#contact" class="mobile-nav-link" onclick="toggleMobileNav()">Contact</a>
+    <a href="index.html#contact" class="nav-btn ask-fathom" style="display: inline-flex !important; margin-top: 24px;" onclick="toggleMobileNav()">ASK FATHOM</a>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials | fathom</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=212" />
+  <style>
+    .page-hero {
+      position: relative; width: 100%; height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--dark-bg);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<script src="navbar.js?v=212"></script>
+
+<section id="testimonials-section" class="testimonials-compact">
+  <!-- Interactive Constellation Canvas -->
+  <canvas id="testimonials-canvas"></canvas>
+  <div class="testimonials-inner">
+    <h2 class="testimonials-heading" style="margin-bottom: 0;"><span id="testimonials-typewriter-target"></span><span class="typewriter-cursor testimonials-cursor">|</span></h2>
+  </div>
+</section>
+
+<section id="brand-ticker-section" class="brand-ticker-standalone">
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <!-- Group 1 -->
+      <span class="ticker-item">AGS grading</span>
+      <span class="ticker-item">Paragon Medical</span>
+      <span class="ticker-item">Mott Corporation</span>
+      <span class="ticker-item">Arrow Manufacturing</span>
+      <span class="ticker-item">Gar Kenyon Aerospace</span>
+      <span class="ticker-item">Wieland Rolled Products</span>
+      <span class="ticker-item">Stanley Black & Decker</span>
+      <span class="ticker-item">Materion</span>
+      <span class="ticker-item">Estee Lauder</span>
+      <span class="ticker-item">Marmon Utility</span>
+      <span class="ticker-item">Pratt & Whitney</span>
+      <!-- Group 2 (duplicate for seamless loop) -->
+      <span class="ticker-item">AGS grading</span>
+      <span class="ticker-item">Paragon Medical</span>
+      <span class="ticker-item">Mott Corporation</span>
+      <span class="ticker-item">Arrow Manufacturing</span>
+      <span class="ticker-item">Gar Kenyon Aerospace</span>
+      <span class="ticker-item">Wieland Rolled Products</span>
+      <span class="ticker-item">Stanley Black & Decker</span>
+      <span class="ticker-item">Materion</span>
+      <span class="ticker-item">Estee Lauder</span>
+      <span class="ticker-item">Marmon Utility</span>
+      <span class="ticker-item">Pratt & Whitney</span>
+    </div>
+  </div>
+</section>
+
+<div style="background: var(--dark-bg); position: relative; z-index: 10;">
+  <fathom-footer></fathom-footer>
+</div>
+
+<script src="footer.js?v=212"></script>
+<script src="main.js?v=212"></script>
+
+<!-- Mobile Navigation Overlay -->
+<div id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-inner">
+    <a href="solutions.html" class="mobile-nav-link" onclick="toggleMobileNav()">Solutions</a>
+    <a href="products.html" class="mobile-nav-link" onclick="toggleMobileNav()">Standardized Products</a>
+    <a href="return.html" class="mobile-nav-link" onclick="toggleMobileNav()">Calculate Project Return</a>
+    <a href="testimonials.html" class="mobile-nav-link" onclick="toggleMobileNav()">Testimonials</a>
+    <a href="index.html#contact" class="mobile-nav-link" onclick="toggleMobileNav()">Contact</a>
+    <a href="index.html#contact" class="nav-btn ask-fathom" style="display: inline-flex !important; margin-top: 24px;" onclick="toggleMobileNav()">ASK FATHOM</a>
+  </div>
+</div>
+
+</body>
+</html>
